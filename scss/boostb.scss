@@ -101,7 +101,8 @@ body {
             font-family: Roboto, Arial, sans-serif;
         }
         .dropdown,
-        .dropdown .icon {
+        .dropdown .icon,
+        .dropdown .dropdown-toggle::after{
             color: 'text-color';
         }
         
@@ -886,3 +887,5 @@ body.drawer-open-right {
         display: none;
     }
 }
+
+@import "login";
