@@ -38,6 +38,9 @@ $string['logo1desc'] = 'This logo will appear when the menu is open. Must be a b
 $string['logo2'] = 'Logo icon';
 $string['logo2desc'] = 'This logo will appear when the menu is collapsed. Must be a logo of size 35x35px.';
 
+$string[ 'favicon' ]     = 'Favicon';
+$string[ 'favicondesc' ] = 'Change the favicon of the theme. A .png image with transparent background and 32px height will work best.';
+
 $string['headercolor'] = 'Background color';
 $string['headercolor_desc'] = 'Theme header background color';
 

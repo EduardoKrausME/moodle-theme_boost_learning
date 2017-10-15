@@ -27,6 +27,10 @@ defined('MOODLE_INTERNAL') || die;
  */
 class core_renderer extends \theme_boost\output\core_renderer {
 
+    public function favicon() {
+        return $this->page->theme->setting_file_url('favicon', 'favicon');
+    }
+
     public function should_display_navbar_logo1() {
         if (get_config('theme_boostb', 'logo1')) {
             return true;

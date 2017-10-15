@@ -33,10 +33,13 @@ $string['currentinparentheses'] = '(atual)';
 $string['generalsettings'] = 'Configurações gerais';
 
 $string['logo1'] = 'Logotipo maior';
-$string['logo1desc'] = 'Este logotipo aparecerá quando o menu estiver aberto. Deve ser um logotipo de tamanho 35x200px. ';
+$string['logo1desc'] = 'Este logotipo aparecerá quando o menu estiver aberto. Deve ser um logotipo de tamanho 35x200px.';
 
 $string['logo2'] = 'Ícone do logotipo';
-$string['logo2desc'] = 'Este logotipo aparecerá quando o menu estiver desmoronado. Deve ser um logotipo de tamanho 35x35px. ';
+$string['logo2desc'] = 'Este logotipo aparecerá quando o menu estiver desmoronado. Deve ser um logotipo de tamanho 35x35px.';
+
+$string[ 'favicon' ]     = 'Favicon';
+$string[ 'favicondesc' ] = 'Alterar o favicon do tema. Uma imagem .png com fundo transparente e altura de 32px terá o melhor funcionamento.';
 
 $string['headercolor'] = 'Cor de fundo';
 $string['headercolor_desc'] = 'Cor do fundo do cabeçalho do tema';

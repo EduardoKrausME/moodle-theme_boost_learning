@@ -44,6 +44,14 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback ( 'theme_reset_all_caches' );
     $page->add($setting);
 
+    $name = 'theme_boostb/favicon';
+    $title = get_string ( 'favicon', 'theme_boostb' );
+    $description = get_string ( 'favicondesc', 'theme_boostb' );
+    $setting = new admin_setting_configstoredfile( $name, $title, $description, 'favicon', 0,
+        array('maxfiles' => 1, 'accepted_types' => array('png', 'jpg', 'ico')));
+    $setting->set_updatedcallback ( 'theme_reset_all_caches' );
+    $page->add($setting);
+
 
     // @headerColor setting.
     $name = 'theme_boostb/headercolor';
