@@ -17,17 +17,17 @@
 /**
  * Language file.
  *
- * @package   theme_boostb
+ * @package   theme_boost_learning
  * @copyright 2017 Eduardo Kraus
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'BoostB';
-$string['pluginname'] = 'BoostB';
+$string['configtitle'] = 'Boost Learning';
+$string['pluginname'] = 'Boost Learning';
 $string['advancedsettings'] = 'Configurações avançadas';
-$string['choosereadme'] = 'BoostB é um tema moderno e altamente personalizável. Este tema destina-se a ser usado diretamente ou como um tema pai ao criar novos temas utilizando o Bootstrap 4. ';
+$string['choosereadme'] = 'Boost Learning é um tema moderno e altamente personalizável. Este tema destina-se a ser usado diretamente ou como um tema pai ao criar novos temas utilizando o Bootstrap 4. ';
 $string['currentinparentheses'] = '(atual)';
 
 $string['generalsettings'] = 'Configurações gerais';

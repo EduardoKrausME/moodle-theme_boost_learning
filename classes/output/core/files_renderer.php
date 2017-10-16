@@ -14,13 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace theme_boostb\output\core;
+namespace theme_boost_learning\output\core;
 
 defined('MOODLE_INTERNAL') || die();
 
 /**
  * Rendering of files viewer related widgets.
- * @package   theme_boostb
+ * @package   theme_boost_learning
  * @copyright 2017 Eduardo Kraus
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

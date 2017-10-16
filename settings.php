@@ -15,36 +15,36 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package   theme_boostb
+ * @package   theme_boost_learning
  * @copyright 2017 Eduardo Kraus
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
-    $settings = new theme_boost_admin_settingspage_tabs('themesettingboostb', get_string('configtitle', 'theme_boostb'));
-    $page = new admin_settingpage('theme_boostb_general', get_string('generalsettings', 'theme_boostb'));
+    $settings = new theme_boost_admin_settingspage_tabs('themesettingboost_learning', get_string('configtitle', 'theme_boost_learning'));
+    $page = new admin_settingpage('theme_boost_learning_general', get_string('generalsettings', 'theme_boost_learning'));
 
     // logo file setting.
-    $name        = 'theme_boostb/logo1';
-    $title       = get_string ( 'logo1', 'theme_boostb' );
-    $description = get_string ( 'logo1desc', 'theme_boostb' );
+    $name        = 'theme_boost_learning/logo1';
+    $title       = get_string ( 'logo1', 'theme_boost_learning' );
+    $description = get_string ( 'logo1desc', 'theme_boost_learning' );
     $setting     = new admin_setting_configstoredfile( $name, $title, $description, 'logo1', 0,
         array('maxfiles' => 1, 'accepted_types' => array('png', 'jpg', 'svg')));
     $setting->set_updatedcallback ( 'theme_reset_all_caches' );
     $page->add($setting);
 
-    $name        = 'theme_boostb/logo2';
-    $title       = get_string ( 'logo2', 'theme_boostb' );
-    $description = get_string ( 'logo2desc', 'theme_boostb' );
+    $name        = 'theme_boost_learning/logo2';
+    $title       = get_string ( 'logo2', 'theme_boost_learning' );
+    $description = get_string ( 'logo2desc', 'theme_boost_learning' );
     $setting     = new admin_setting_configstoredfile( $name, $title, $description, 'logo2', 0,
         array('maxfiles' => 1, 'accepted_types' => array('png', 'jpg', 'svg')));
     $setting->set_updatedcallback ( 'theme_reset_all_caches' );
     $page->add($setting);
 
-    $name = 'theme_boostb/favicon';
-    $title = get_string ( 'favicon', 'theme_boostb' );
-    $description = get_string ( 'favicondesc', 'theme_boostb' );
+    $name = 'theme_boost_learning/favicon';
+    $title = get_string ( 'favicon', 'theme_boost_learning' );
+    $description = get_string ( 'favicondesc', 'theme_boost_learning' );
     $setting = new admin_setting_configstoredfile( $name, $title, $description, 'favicon', 0,
         array('maxfiles' => 1, 'accepted_types' => array('png', 'jpg', 'ico')));
     $setting->set_updatedcallback ( 'theme_reset_all_caches' );
@@ -52,18 +52,18 @@ if ($ADMIN->fulltree) {
 
 
     // @headerColor setting.
-    $name = 'theme_boostb/headercolor';
-    $title = get_string('headercolor', 'theme_boostb');
-    $description = get_string('headercolor_desc', 'theme_boostb');
+    $name = 'theme_boost_learning/headercolor';
+    $title = get_string('headercolor', 'theme_boost_learning');
+    $description = get_string('headercolor_desc', 'theme_boost_learning');
     $default = '#2196f3';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, null, false);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // @textColor setting.
-    $name = 'theme_boostb/textcolor';
-    $title = get_string('textcolor', 'theme_boostb');
-    $description = get_string('textcolor_desc', 'theme_boostb');
+    $name = 'theme_boost_learning/textcolor';
+    $title = get_string('textcolor', 'theme_boost_learning');
+    $description = get_string('textcolor_desc', 'theme_boost_learning');
     $default = '#FFFFFF';
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, null, false);
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -74,17 +74,17 @@ if ($ADMIN->fulltree) {
     $settings->add($page);
 
     // Advanced settings.
-    $page = new admin_settingpage('theme_boostb_advanced', get_string('advancedsettings', 'theme_boostb'));
+    $page = new admin_settingpage('theme_boost_learning_advanced', get_string('advancedsettings', 'theme_boost_learning'));
 
     // Raw SCSS to include before the content.
-    $setting = new admin_setting_scsscode('theme_boostb/scsspre',
-        get_string('rawscsspre', 'theme_boostb'), get_string('rawscsspre_desc', 'theme_boostb'), '', PARAM_RAW);
+    $setting = new admin_setting_scsscode('theme_boost_learning/scsspre',
+        get_string('rawscsspre', 'theme_boost_learning'), get_string('rawscsspre_desc', 'theme_boost_learning'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Raw SCSS to include after the content.
-    $setting = new admin_setting_scsscode('theme_boostb/scss', get_string('rawscss', 'theme_boostb'),
-        get_string('rawscss_desc', 'theme_boostb'), '', PARAM_RAW);
+    $setting = new admin_setting_scsscode('theme_boost_learning/scss', get_string('rawscss', 'theme_boost_learning'),
+        get_string('rawscss_desc', 'theme_boost_learning'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

@@ -14,14 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace theme_boostb\output;
+namespace theme_boost_learning\output;
 
 defined('MOODLE_INTERNAL') || die;
 
 /**
  * Renderers to align Moodle's HTML with that expected by Bootstrap
  *
- * @package    theme_boostb
+ * @package    theme_boost_learning
  * @copyright  2012 Bas Brands, www.basbrands.nl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -38,7 +38,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @return bool
      */
     public function should_display_navbar_logo1() {
-        if (get_config('theme_boostb', 'logo1')) {
+        if (get_config('theme_boost_learning', 'logo1')) {
             return true;
         }
 
@@ -59,7 +59,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @return bool
      */
     public function should_display_navbar_logo2() {
-        if (get_config('theme_boostb', 'logo2')) {
+        if (get_config('theme_boost_learning', 'logo2')) {
             return true;
         }
 

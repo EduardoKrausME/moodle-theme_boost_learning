@@ -15,9 +15,9 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boostb/secure
+    @template theme_boost_learning/secure
 
-    BoostB secure layout template.
+    Boost Learning secure layout template.
 
     Context variables required for this template:
     * sitename - The name of the site
@@ -49,7 +49,7 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{>theme_boostb/header-secure}}
+    {{>theme_boost_learning/header-secure}}
 
     <div id="page" class="container-fluid">
         {{! Secured full header }}
@@ -93,5 +93,5 @@
 </body>
 </html>
 {{#js}}
-require(['theme_boostb/loader']);
+require(['theme_boost_learning/loader']);
 {{/js}}

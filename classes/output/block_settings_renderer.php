@@ -17,19 +17,19 @@
 /**
  * Overriden block settings renderer.
  *
- * @package    theme_boostb
+ * @package    theme_boost_learning
  * @copyright  2017 Eduardo Kraus
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_boostb\output;
+namespace theme_boost_learning\output;
 defined('MOODLE_INTERNAL') || die();
 
 
 /**
  * Overriden block settings renderer.
  *
- * @package    theme_boostb
+ * @package    theme_boost_learning
  * @copyright  2017 Eduardo Kraus
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
