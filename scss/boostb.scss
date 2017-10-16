@@ -6,7 +6,7 @@ $gray-lighter: #eceeef !default;
 $gray-lightest: #f7f7f9 !default;
 $brand-primary: #2f7da8 !default;
 $brand-success: #77b300 !default;
-$brand-warning: #ff8800 !default;
+$brand-warning: #f80 !default;
 $brand-danger: #ff4136 !default;
 $brand-inverse: $gray-dark !default;
 $navbar-height: 65px !default;
@@ -95,18 +95,15 @@ body {
         .dropdown .dropdown-toggle::after {
             color: 'text-color';
         }
-        
         .pull-xs-left,
         .page-header-headings {
             float: none !important;
         }
     }
-    
     #page,
     #page-footer {
         margin-left: 69px;
     }
-    
     &.area-courses,
     &#page-user-profile,
     &#page-message-index {
@@ -173,11 +170,11 @@ body {
 }
 #nav-drawer {
     padding: 0;
-    background: #ffffff;
+    background: #fff;
     button[data-action=toggle-drawer] {
         border-color: transparent;
         background: transparent;
-        color: #ffffff;
+        color: #fff;
         width: 24px;
         padding: 0;
         margin: 0;
@@ -213,17 +210,14 @@ body {
             .smallicon {
                 visibility: hidden;
             }
-            
             .icon::before {
                 @include material-icon();
                 content: 'class';
             }
-            
         }
         &.font-weight-bold {
             color: #2196f3;
         }
-        
         &.sidebar-heading div {
             color: #b7bdc1;
             margin-top: 9.375px !important;
@@ -234,7 +228,6 @@ body {
             letter-spacing: normal;
             line-height: normal;
         }
-        
         .m-l-1 {
             margin-left: 0 !important;
             .icon::before {
@@ -242,11 +235,9 @@ body {
                 content: 'school';
             }
         }
-        
         .icon::before {
             @include material-icon();
         }
-        
         &.menu-coursehome .icon::before {
             content: "school";
         }
@@ -303,9 +294,9 @@ body[rel^="page-admin-"] .menu-sitesettings {
     -moz-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
     -ms-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
     -o-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
-    background: #ffffff;
+    background: #fff;
     padding: 15px 1rem 15px 0;
-    color: #333333;
+    color: #333;
     height: 65px;
     a {
         color: #484747;
@@ -343,14 +334,13 @@ body[rel^="page-admin-"] .menu-sitesettings {
             font-size: 35px;
             color: rgba(51, 51, 51, 0.76);
             &:focus, &:focus {
-                color: #333333;
+                color: #333;
             }
         }
         &:focus, &:focus {
             background: transparent;
             border: 0;
         }
-        
     }
     .navbar-brand {
         background-color: transparent;
@@ -360,7 +350,7 @@ body[rel^="page-admin-"] .menu-sitesettings {
         padding: 0;
         margin-right: 3px;
         @include hover-focus {
-            color: #ffffff;
+            color: #fff;
         }
         &.has-logo {
             color: $brand-primary;
@@ -396,7 +386,6 @@ body.drawer-open-left {
             -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
             transform: rotate(180deg);
         }
-        
         .navbar-nav {
             .site-name {
                 display: inline;;
@@ -435,7 +424,7 @@ body.drawer-open-left {
         transition: color 0.5s ease;
         float: none;
         &:focus, &:focus {
-            color: #ffffff;
+            color: #fff;
         }
     }
 }
@@ -468,7 +457,7 @@ body.drawer-open-left {
     font-size: 14px;
     color: #373a3c;
     text-align: left;
-    background-color: #ffffff;
+    background-color: #fff;
     background-clip: padding-box;
     padding: 0.5rem 0;
     list-style: none;
@@ -519,12 +508,11 @@ $drawer-width: 200px;
     left: 0;
     width: 69px;
     overflow-y: initial;
-    
     .list-group-item {
         height: 52px;
         white-space: nowrap;
         width: max-content;
-        background-color: #ffffff;
+        background-color: #fff;
         transition: background-color .3s ease;
         overflow: hidden;
         .text-menu-item {
@@ -655,7 +643,6 @@ body.drawer-open-right {
     &.fa-exclamation-circle {
         @include material-icon();
     }
-    
     &.fa-tachometer::before {
         content: 'dashboard';
     }
@@ -808,7 +795,7 @@ body.drawer-open-right {
         user-select: none;
         border: 1px solid transparent;
         background: #2196f3;
-        color: #ffffff;
+        color: #fff;
         box-sizing: border-box;
         margin: 0;
         font-size: 1em;
@@ -817,7 +804,6 @@ body.drawer-open-right {
         height: auto;
         padding: 6px 10px;
         border-radius: 4px;
-        
         &.next {
             float: right;
         }

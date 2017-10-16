@@ -6,19 +6,19 @@ body.behat-site {
     .navbar-static-top {
         position: absolute;
     }
-
+    
     // We need more spacing in action menus so behat does not click on the wrong menu item.
     .dropdown-item {
         margin-top: 4px !important; /* stylelint-disable declaration-no-important */
     }
-
+    
     // Remove following after MDL-57172 is fixed.
     &.drawer-ease {
         -webkit-transition: initial;
         -moz-transition: initial;
         transition: initial;
     }
-
+    
     [data-region="drawer"] {
         -webkit-transition: initial;
         -moz-transition: initial;
@@ -26,17 +26,14 @@ body.behat-site {
         position: absolute;
     }
 }
-
 .phpinfo table,
 .phpinfo th,
 .phpinfo h2 {
     margin: auto;
 }
-
 .phpinfo h2 {
     width: 600px;
 }
-
 .phpinfo .e,
 .phpinfo .v,
 .phpinfo .h {
@@ -46,12 +43,10 @@ body.behat-site {
     color: #000;
     background-color: #ccc;
 }
-
 .phpinfo .e {
     background-color: #ccf;
     font-weight: bold;
 }
-
 .phpinfo .h {
     background-color: #99c;
     font-weight: bold;

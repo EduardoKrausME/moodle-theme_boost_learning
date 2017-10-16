@@ -14,14 +14,12 @@ $drawer-offscreen-gutter: 20px !default;
     padding-top: initial;
     margin-top: initial;
 }
-
 #nav-drawer.closed {
     left: -($drawer-width + $drawer-offscreen-gutter);
 }
 #page {
     margin-top: $navbar-height;
 }
-
 /* Use a variable for the drawer background colors. */
 $drawer-bg: $gray-lighter !default;
 
@@ -54,7 +52,6 @@ body.drawer-ease {
     -moz-transition: margin-left 0.5s ease, margin-right 0.5s ease;
     transition: margin-left 0.5s ease, margin-right 0.5s ease;
 }
-
 body.drawer-open-left {
     @include media-breakpoint-up(md) {
         margin-left: $drawer-width;

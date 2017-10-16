@@ -20,18 +20,15 @@ li.activity.label,
     line-height: inherit;
     text-align: inherit;
 }
-
 .file-picker td.label {
     display: table-cell;
     text-align: right;
 }
-
 // Some of this dialog is sized in ems so a different font size
 // effects the whole layout.
 .choosercontainer #chooseform .option label {
     font-size: 12px;
 }
-
 /* block.invisible vs .invisible
  * block.hidden vs .invisible
  *
@@ -61,8 +58,6 @@ li.section.hidden,
     visibility: visible;
     display: block;
 }
-
-
 /* .row vs .row
  *
  * very tricky to track down this when it goes wrong,
@@ -75,7 +70,6 @@ li.section.hidden,
 .forumpost .row {
     margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
 }
-
 .forumpost .row:before,
 .forumpost .row:after {
     content: none;
@@ -99,7 +93,6 @@ fieldset.hidden {
     display: inherit;
     visibility: inherit;
 }
-
 /* .container vs .container
  *
  * bootstrap uses .container to set the width of the layout at 960px or so, Moodle uses it
@@ -110,13 +103,11 @@ fieldset.hidden {
 #questionbank + .container {
     width: auto;
 }
-
 // Allow the custom menu to expand/collapse when the user hovers over it with JS disabled.
 body:not(.jsenabled) .dropdown:hover > .dropdown-menu {
     display: block;
     margin-top: -6px; // We need to move it up to counter the arrows as they introduce hover bugs.
 }
-
 // Extends bootstrapbase/less/bootstrap/navbar.less
 // to enable scroll in the language menu.
 body:not(.jsenabled) .langmenu:hover > .dropdown-menu,
@@ -125,14 +116,12 @@ body:not(.jsenabled) .langmenu:hover > .dropdown-menu,
     max-height: 150px;
     overflow-y: auto;
 }
-
 // Extends bootstrapbase/less/bootstrap/type.less
 // to enable ol lists to use a larger number set.
 
 ol {
     margin: 0 0 $line-height-base / 2 2.5em;
 }
-
 // Set menus in the fixed header to scroll vertically when they are longer than the page.
 .navbar-static-top .dropdown .dropdown-menu {
     max-height: calc(100vh - #{$navbar-height});

@@ -2,7 +2,7 @@
     .grouped_settings {
         clear: both;
         overflow: hidden;
-
+        
         /* Use card styles but avoid extend because that brings in too much. */
         &.section_level {
             background-color: $card-bg;
@@ -13,7 +13,7 @@
             margin-bottom: $card-spacer-x;
         }
     }
-
+    
     /* These are long labels with checkboxes on the right. */
     .include_setting {
         width: 50%;
@@ -28,7 +28,6 @@
         padding: $table-sm-cell-padding;
     }
 }
-
 .path-backup {
     /* Bold section labels */
     .section_level {
@@ -37,12 +36,11 @@
     .section_level .activity_level {
         font-weight: normal;
     }
-
+    
     .proceedbutton {
         float: right;
     }
 }
-
 /* Override the columns width to leave more room for the labels. */
 .path-backup .mform {
     .root_setting,
@@ -77,7 +75,6 @@
         }
     }
 }
-
 /* Detail pair is (usually) some short label with a longer value */
 .path-backup .detail-pair {
     .detail-pair-label {
@@ -90,7 +87,6 @@
         float: left;
     }
 }
-
 .path-backup .backup-restore .singlebutton {
     float: right;
 }
@@ -109,14 +105,14 @@
         width: auto;
         float: none;
     }
-
+    
     /* Add card styles to backup sections */
     ::after {
         content: "";
         display: table;
         clear: both;
     }
-
+    
     background-color: $card-bg;
     @include border-radius($card-border-radius);
     border: $card-border-width solid $card-border-color;
@@ -124,39 +120,33 @@
     padding: $card-spacer-x;
     margin-bottom: $card-spacer-x;
 }
-
 .path-backup .notification.dependencies_enforced {
     color: $state-danger-text;
     font-weight: bold;
 }
-
 .path-backup .backup_progress {
     margin-top: $spacer-y;
     margin-bottom: $spacer-y;
-
+    
     .backup_stage {
         @extend .text-muted;
-
+        
         &.backup_stage_current {
             font-weight: bold;
             color: inherit;
         }
     }
 }
-
 .path-backup .backup_progress span.backup_stage.backup_stage_complete {
     color: inherit;
 }
-
 #page-backup-restore .filealiasesfailures {
     background-color: $state-danger-bg;
-
+    
     .aliaseslist {
         background-color: $body-bg;
     }
 }
-
-
 .path-backup .wibbler {
     width: 500px;
     margin: 0 auto 10px;
@@ -165,7 +155,7 @@
     border-left: 1px solid black;
     position: relative;
     min-height: 4px;
-
+    
     .wibble {
         position: absolute;
         left: 0;
@@ -173,7 +163,7 @@
         top: 0;
         height: 4px;
     }
-
+    
     .state0 {
         background: #eee;
     }

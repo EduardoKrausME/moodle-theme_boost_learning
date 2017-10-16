@@ -1,27 +1,25 @@
 .fade {
-  opacity: 0;
-  transition: opacity .15s linear;
-
-  &.in {
-    opacity: 1;
-  }
+    opacity: 0;
+    transition: opacity .15s linear;
+    
+    &.in {
+        opacity: 1;
+    }
 }
-
 .collapse {
-  display: none;
-
-  &.in {
-    display: block;
-  }
-  // tr&.in    { display: table-row; }
-  // tbody&.in { display: table-row-group; }
+    display: none;
+    
+    &.in {
+        display: block;
+    }
+    // tr&.in    { display: table-row; }
+    // tbody&.in { display: table-row-group; }
 }
-
 .collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition-timing-function: ease;
-  transition-duration: .35s;
-  transition-property: height;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition-timing-function: ease;
+    transition-duration: .35s;
+    transition-property: height;
 }

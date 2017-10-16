@@ -11,7 +11,6 @@ table.flexible,
 .generaltable {
     @extend .table-striped;
 }
-
 table {
     caption {
         font-size: 24px;
@@ -21,7 +20,6 @@ table {
         caption-side: top;
     }
 }
-
 #page-report-loglive-index .generaltable,
 #page-admin-report-log-index .generaltable,
 #page-report-log-user .generaltable,
@@ -32,7 +30,6 @@ table {
 table#listdirectories {
     @extend .table-sm;
 }
-
 table.grading-report,
 .forumheaderlist,
 .generaltable,

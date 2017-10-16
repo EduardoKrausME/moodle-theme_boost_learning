@@ -3,9 +3,8 @@
 //
 
 .bg-faded {
-  background-color: $gray-lightest;
+    background-color: $gray-lightest;
 }
-
 @include bg-variant('.bg-primary', $brand-primary);
 
 @include bg-variant('.bg-success', $brand-success);
