@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Boostb config.
+ * BoostB config.
  *
  * @package   theme_boostb
  * @copyright 2017 Eduardo Kraus

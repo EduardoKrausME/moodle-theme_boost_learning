@@ -14,14 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * @package   theme_boostb
- * @copyright 2016 Ryan Wyllie
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
 defined('MOODLE_INTERNAL') || die();
 
+/**
+ * @package   theme_boostb
+ * @copyright 2017 Eduardo Kraus
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 if ($ADMIN->fulltree) {
     $settings = new theme_boost_admin_settingspage_tabs('themesettingboostb', get_string('configtitle', 'theme_boostb'));
     $page = new admin_settingpage('theme_boostb_general', get_string('generalsettings', 'theme_boostb'));

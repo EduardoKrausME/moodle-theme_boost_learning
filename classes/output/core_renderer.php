@@ -27,10 +27,16 @@ defined('MOODLE_INTERNAL') || die;
  */
 class core_renderer extends \theme_boost\output\core_renderer {
 
+    /**
+     * @return string
+     */
     public function favicon() {
         return $this->page->theme->setting_file_url('favicon', 'favicon');
     }
 
+    /**
+     * @return bool
+     */
     public function should_display_navbar_logo1() {
         if (get_config('theme_boostb', 'logo1')) {
             return true;
@@ -39,6 +45,9 @@ class core_renderer extends \theme_boost\output\core_renderer {
         return false;
     }
 
+    /**
+     * @return string
+     */
     public function get_logo_url1() {
         $imageurl = $this->page->theme->setting_file_url('logo1', 'logo1');
         if (!empty($imageurl)) {
@@ -46,6 +55,9 @@ class core_renderer extends \theme_boost\output\core_renderer {
         }
     }
 
+    /**
+     * @return bool
+     */
     public function should_display_navbar_logo2() {
         if (get_config('theme_boostb', 'logo2')) {
             return true;
@@ -54,6 +66,9 @@ class core_renderer extends \theme_boost\output\core_renderer {
         return false;
     }
 
+    /**
+     * @return string
+     */
     public function get_logo_url2() {
         $imageurl = $this->page->theme->setting_file_url('logo2', 'logo2');
         if (!empty($imageurl)) {
