@@ -215,8 +215,9 @@ body {
                 content: 'class';
             }
         }
-        &.font-weight-bold {
-            color: #2196f3;
+        &.font-weight-bold,
+        &.font-weight-bold .icon {
+            color: 'background-color';
         }
         &.sidebar-heading div {
             color: #b7bdc1;
@@ -283,7 +284,7 @@ body {
 }
 body[rel^="page-admin-"] .menu-sitesettings {
     font-weight: 700;
-    color: #2196f3;
+    color: 'background-color';
 }
 .navbar {
     max-height: 65px;
@@ -292,7 +293,6 @@ body[rel^="page-admin-"] .menu-sitesettings {
     box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
     -webkit-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
     -moz-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
-    -ms-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
     -o-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
     background: #fff;
     padding: 15px 1rem 15px 0;
@@ -794,7 +794,7 @@ body.drawer-open-right {
         -ms-user-select: none;
         user-select: none;
         border: 1px solid transparent;
-        background: #2196f3;
+        background: 'background-color';
         color: #fff;
         box-sizing: border-box;
         margin: 0;
@@ -816,7 +816,7 @@ body.drawer-open-right {
     }
     .current {
         font-size: 24px !important;
-        color: #2196f3 !important;
+        color: 'background-color' !important;
     }
 }
 .calendar_event_group i {
