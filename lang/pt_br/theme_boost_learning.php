@@ -38,8 +38,8 @@ $string['logo1desc'] = 'Este logotipo aparecerá quando o menu estiver aberto. D
 $string['logo2'] = 'Ícone do logotipo';
 $string['logo2desc'] = 'Este logotipo aparecerá quando o menu estiver desmoronado. Deve ser um logotipo de tamanho 35x35px.';
 
-$string[ 'favicon' ]     = 'Favicon';
-$string[ 'favicondesc' ] = 'Alterar o favicon do tema. Uma imagem .png com fundo transparente e altura de 32px terá o melhor funcionamento.';
+$string['favicon'] = 'Favicon';
+$string['favicondesc'] = 'Alterar o favicon do tema. Uma imagem .png com fundo transparente e altura de 32px terá o melhor funcionamento.';
 
 $string['headercolor'] = 'Cor de fundo';
 $string['headercolor_desc'] = 'Cor do fundo do cabeçalho do tema';
@@ -52,3 +52,7 @@ $string['rawscss_desc'] = 'Use este campo para fornecer código SCSS ou CSS que 
 $string['rawscsspre'] = 'Raw SCSS inicial';
 $string['rawscsspre_desc'] = 'Neste campo você pode fornecer o código SCSI de inicialização, ele será injetado antes de tudo o resto. Na maioria das vezes, você usará esta configuração para definir variáveis. ';
 $string['region-side-pre'] = 'Right';
+
+$string['icons'] = 'Ícones';
+$string['icon'] = 'URL do {$a}';
+$string['icondesc'] = 'Digite a URL de seu {$a}.';

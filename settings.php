@@ -70,6 +70,36 @@ if ($ADMIN->fulltree) {
     $page->add($setting);
 
 
+    // Add tab icons.
+    $settings->add($page);
+
+    // Icons.
+    $page = new admin_settingpage('theme_boost_learning_icons', get_string('icons', 'theme_boost_learning'));
+
+    $icons = [
+        'android' => "Google Play Store",
+        'apple' => 'Apple App Store',
+        'youtube' => 'YouTube',
+        'pinterest' => 'Pinterest',
+        'linkedin' => 'LinkedIn',
+        'instagram' => 'Instagram',
+        'flickr' => 'Flickr',
+        //'googleplus' => 'Google+',
+        'twitter' => 'Twitter',
+        'facebook' => 'Facebook',
+        'website' => 'Website',
+    ];
+
+    foreach ($icons as $icon => $iconname) {
+        $name = "theme_boost_learning/icon_{$icon}";
+        $title = get_string("icon", 'theme_boost_learning', $iconname);
+        $description = get_string('icondesc', 'theme_boost_learning', $iconname);
+        $default = '';
+        $setting = new admin_setting_configtext($name, $title, $description, $default);
+        $page->add($setting);
+    }
+
+
     // Must add the page after definiting all the settings!
     $settings->add($page);
 

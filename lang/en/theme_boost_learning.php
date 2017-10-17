@@ -38,8 +38,8 @@ $string['logo1desc'] = 'This logo will appear when the menu is open. Must be a b
 $string['logo2'] = 'Logo icon';
 $string['logo2desc'] = 'This logo will appear when the menu is collapsed. Must be a logo of size 35x35px.';
 
-$string[ 'favicon' ]     = 'Favicon';
-$string[ 'favicondesc' ] = 'Change the favicon of the theme. A .png image with transparent background and 32px height will work best.';
+$string['favicon'] = 'Favicon';
+$string['favicondesc'] = 'Change the favicon of the theme. A .png image with transparent background and 32px height will work best.';
 
 $string['headercolor'] = 'Background color';
 $string['headercolor_desc'] = 'Theme header background color';
@@ -52,3 +52,8 @@ $string['rawscss_desc'] = 'Use this field to provide SCSS or CSS code which will
 $string['rawscsspre'] = 'Raw initial SCSS';
 $string['rawscsspre_desc'] = 'In this field you can provide initialising SCSS code, it will be injected before everything else. Most of the time you will use this setting to define variables.';
 $string['region-side-pre'] = 'Right';
+
+
+$string['icons'] = 'Icons';
+$string['icon'] = '{$a} URL';
+$string['icondesc'] = 'Enter the URL of your {$a}.';
