@@ -92,6 +92,7 @@ body {
         }
         .dropdown,
         .dropdown .icon,
+        .dropdown .icon::before,
         .dropdown .dropdown-toggle::after {
             color: 'text-color';
         }
@@ -313,6 +314,7 @@ body[rel^="page-admin-"] .menu-sitesettings {
             font-size: $font-size-sm;
             text-transform: uppercase;
             letter-spacing: 1px;
+            color: rgba(255, 254, 254, 0.65);
         }
         img {
             max-height: 35px;
@@ -480,18 +482,25 @@ body.drawer-open-left {
         font-size: 16px;
         font-family: Roboto, Arial, sans-serif;
         transition: color 0.5s ease;
+        color: rgba(0, 0, 0, .54);
         .icon {
             float: left;
             margin-right: 19px;
         }
+        a,
         .icon,
         .menu-action-text {
-            color: rgba(0, 0, 0, .54) !important;
+            color: rgba(0, 0, 0, .54);
         }
-        &:focus, &:focus {
+        a:focus,
+        a:hover {
+            color: #4d4f50;
+        }
+        &:focus,
+        &:hover {
             .icon,
             .menu-action-text {
-                color: #4d4f50 !important;
+                color: #4d4f50;
             }
         }
     }
@@ -584,7 +593,7 @@ body.drawer-open-right {
             left: 0;
         }
         .text-sm-right {
-            text-align: left !important;
+            text-align: left;
             font-weight: 700;
             font-family: Roboto, Arial, sans-serif;
         }
@@ -800,7 +809,7 @@ body.drawer-open-right {
         margin: 0;
         font-size: 1em;
         cursor: pointer;
-        width: auto !important;
+        width: auto;
         height: auto;
         padding: 6px 10px;
         border-radius: 4px;
@@ -815,8 +824,8 @@ body.drawer-open-right {
         }
     }
     .current {
-        font-size: 24px !important;
-        color: 'background-color' !important;
+        font-size: 24px;
+        color: 'background-color';
     }
 }
 .calendar_event_group i {
