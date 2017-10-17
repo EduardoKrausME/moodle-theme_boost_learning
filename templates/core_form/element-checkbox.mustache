@@ -1,3 +1,8 @@
+{{!
+    @template none
+
+    Example context (json): {}
+}}
 <div class="form-group row {{#error}}has-danger{{/error}} fitem {{#advanced}}advanced{{/advanced}} {{{element.extraclasses}}}">
     <div class="col-md-3">
         {{#text}}
@@ -48,7 +53,7 @@
 </div>
 {{^element.frozen}}
 {{#js}}
-require(['theme_boost_learning/form-display-errors'], function(module) {
+require(['theme_boost_magnific/form-display-errors'], function(module) {
     module.enhance({{#quote}}{{element.id}}{{/quote}});
 });
 {{/js}}

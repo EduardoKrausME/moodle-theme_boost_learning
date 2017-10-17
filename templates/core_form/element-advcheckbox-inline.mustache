@@ -1,3 +1,8 @@
+{{!
+    @template none
+
+    Example context (json): {}
+}}
 <label class="form-check-inline {{#error}}has-danger{{/error}} fitem {{#advanced}}advanced{{/advanced}} {{{element.extraclasses}}}">
 {{^element.hardfrozen}}
     {{^element.frozen}}
@@ -32,7 +37,7 @@
 </span>
 {{^element.frozen}}
 {{#js}}
-require(['theme_boost_learning/form-display-errors'], function(module) {
+require(['theme_boost_magnific/form-display-errors'], function(module) {
     module.enhance({{#quote}}{{element.id}}{{/quote}});
 });
 {{/js}}
