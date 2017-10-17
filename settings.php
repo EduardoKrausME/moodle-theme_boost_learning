@@ -22,7 +22,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
-    $settings = new theme_boost_admin_settingspage_tabs('themesettingboost_learning', get_string('configtitle', 'theme_boost_learning'));
+    $settings = new theme_boost_admin_settingspage_tabs('themesettingboost_learning',
+        get_string('configtitle', 'theme_boost_learning'));
     $page = new admin_settingpage('theme_boost_learning_general', get_string('generalsettings', 'theme_boost_learning'));
 
     // logo file setting.
@@ -84,7 +85,6 @@ if ($ADMIN->fulltree) {
         'linkedin' => 'LinkedIn',
         'instagram' => 'Instagram',
         'flickr' => 'Flickr',
-        //'googleplus' => 'Google+',
         'twitter' => 'Twitter',
         'facebook' => 'Facebook',
         'website' => 'Website',
