@@ -28,7 +28,7 @@
 
         <a href="{{{ config.wwwroot }}}" class="navbar-brand
                     {{# output.should_display_navbar_logo1 }}has-logo{{/ output.should_display_navbar_logo1 }}
-                    {{# output.should_display_navbar_logo2 }}has-icone{{/ output.should_display_navbar_logo2 }}">
+            {{# output.should_display_navbar_logo2 }}has-icone{{/ output.should_display_navbar_logo2 }}">
             {{# output.should_display_navbar_logo1 }}
                 <span class="logo hidden-xs-down">
                     <img src="{{output.get_logo_url1}}" alt="{{sitename}}">
@@ -52,7 +52,6 @@
         </div>
 
 
-
         <!-- user_menu -->
         {{{ output.user_menu }}}
 
@@ -61,7 +60,7 @@
 
         <!-- search_box -->
         <span class="hidden-md-down">
-        {{{ output.search_box }}}
+            {{{ output.search_box }}}
         </span>
 
         <nav class="nav navbar-nav hidden-md-down">
