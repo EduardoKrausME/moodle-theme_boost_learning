@@ -266,9 +266,7 @@ select[size],
 select[multiple] {
     overflow: auto;
 }
-select[size=
-1
-]
+select[size="1"]
 {
     overflow: visible;
 }

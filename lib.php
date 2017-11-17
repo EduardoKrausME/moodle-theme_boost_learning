@@ -94,6 +94,18 @@ function theme_boost_learning_get_pre_scss($theme) {
     return $scss;
 }
 
+/**
+ * Load logos.
+ *
+ * @param $course
+ * @param $cm
+ * @param $context
+ * @param $filearea
+ * @param $args
+ * @param $forcedownload
+ * @param array $options
+ * @return bool
+ */
 function theme_boost_learning_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ( $context->contextlevel == CONTEXT_SYSTEM ) {
         $theme = theme_config::load('boost_learning');
@@ -101,4 +113,5 @@ function theme_boost_learning_pluginfile($course, $cm, $context, $filearea, $arg
     }
 
     send_file_not_found();
+    return false;
 }

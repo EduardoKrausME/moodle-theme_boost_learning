@@ -201,7 +201,7 @@ body {
             //float        : left;
             margin-right: 6px;
         }
-        &:focus, &:hover {
+        @include hover-focus {
             color: rgba(0, 0, 0, .80);
             i {
                 color: rgba(0, 0, 0, .80);
@@ -232,7 +232,6 @@ body {
             line-height: normal;
         }
         .m-l-1 {
-            margin-left: 0 !important;
             .icon::before {
                 @include material-icon();
                 content: 'school';
@@ -283,6 +282,40 @@ body {
             content: 'folder_open';
         }
     }
+    &.closed {
+        left: 0;
+        width: 69px;
+        overflow-y: initial;
+        .list-group-item {
+            height: 52px;
+            white-space: nowrap;
+            width: max-content;
+            background-color: #fff;
+            transition: background-color .3s ease;
+            overflow: hidden;
+            .text-menu-item {
+                display: none;
+            }
+            &:hover {
+                background-color: #e4e4e4;
+                .text-menu-item {
+                    display: inline-block;
+                    padding: 5px 11px 4px;
+                    float: left;
+                }
+            }
+            .icon::before {
+                font-size: 33px;
+                width: 33px;
+            }
+            &.sidebar-heading {
+                display: none;
+            }
+        }
+        .m-l-1 {
+            margin-left : 0 !important;
+        }
+    }
 }
 body[rel^="page-admin-"] .menu-sitesettings {
     font-weight: 700;
@@ -297,28 +330,37 @@ body[rel^="page-admin-"] .menu-sitesettings {
     -moz-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
     -o-box-shadow: 0 2px 4px rgba(33, 33, 33, .2);
     background: #fff;
-    padding: 15px 1rem 15px 0;
+    padding: 0 1rem 0 0;
     color: #333;
     height: 65px;
     a {
         color: #484747;
     }
     .navbar-nav {
-        padding-left: 0;
+        height: 50px;
         .nav-item + .nav-item {
             margin-left: $spacer * 2;
         }
         .nav-item {
-            margin-top: 5px;
+            margin-top: 0;
         }
         .nav-link {
-            font-size: $font-size-sm;
+            font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: rgba(255, 254, 254, 0.65);
+            color: #fff;
+            padding: 15px;
+            display: inline-block;
+            &:hover{
+                background-color: rgba(0, 0, 0, .1);
+                color: rgba(255, 255, 255, 0.85);
+            }
         }
-        img {
-            max-height: 35px;
+        .popover-region-toggle {
+            padding : 13px 0 15px;
+        }
+        .nav-item + .nav-item {
+            margin-left: 0;
         }
     }
     .navbar-toggler {
@@ -332,17 +374,48 @@ body[rel^="page-admin-"] .menu-sitesettings {
         outline: 0;
         background: transparent;
         transition: 300ms linear all;
-        &::after,
-        .material-icons {
-            font-size: 35px;
-            color: rgba(51, 51, 51, 0.76);
-            &:focus, &:focus {
-                color: #333;
+        span {
+            width      : 20px;
+            height     : 2px;
+            background : #FFFFFF;
+            display    : block;
+            margin     : 4px auto 0;
+            transition : all 0.3s cubic-bezier(0.81, -0.33, 0.345, 1.375);
+            &:nth-of-type(2) {
+                position  : relative;
+                width     : 35px;
+                transform : rotateY(180deg);
+            }
+            &:nth-of-type(2)::before,
+            &:nth-of-type(2)::after {
+                content    : '';
+                width      : 6px;
+                height     : 2px;
+                display    : block;
+                background : #FFFFFF;
+                transform  : rotate(45deg);
+                position   : absolute;
+                top        : 2px;
+                left       : 0;
+                transition : all 0.7s;
+            }
+            &:nth-of-type(2)::after {
+                transform : rotate(145deg);
+                position  : absolute;
+                top       : -2px;
+                left      : 0;
             }
         }
-        &:focus, &:focus {
-            background: transparent;
-            border: 0;
+        &[aria-expanded="true"] {
+            span:first-of-type {
+                transform: translateY(12px);
+            }
+            span:nth-of-type(2) {
+                transform: none;
+            }
+            span:last-of-type {
+                transform: translateY(-12px);
+            }
         }
     }
     .navbar-brand {
@@ -353,7 +426,7 @@ body[rel^="page-admin-"] .menu-sitesettings {
         padding: 0;
         margin-right: 3px;
         @include hover-focus {
-            color: #fff;
+            color: $brand-primary;
         }
         &.has-logo {
             color: $brand-primary;
@@ -384,11 +457,6 @@ body[rel^="page-admin-"] .menu-sitesettings {
 }
 body.drawer-open-left {
     .navbar-light {
-        .navbar-toggler {
-            -ms-transform: rotate(180deg); /* IE 9 */
-            -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-            transform: rotate(180deg);
-        }
         .navbar-nav {
             .site-name {
                 display: inline;;
@@ -426,7 +494,7 @@ body.drawer-open-left {
         color: rgba(51, 51, 51, 0.7);
         transition: color 0.5s ease;
         float: none;
-        &:focus, &:focus {
+        @include hover-focus {
             color: #fff;
         }
     }
@@ -448,6 +516,7 @@ body.drawer-open-left {
  */
 .usermenu {
     margin: 0;
+    padding: 15px 0;
     .usertext {
         display: none;
     }
@@ -493,12 +562,12 @@ body.drawer-open-left {
         .menu-action-text {
             color: rgba(0, 0, 0, .54);
         }
-        a:focus,
-        a:hover {
-            color: #4d4f50;
+        a {
+            @include hover-focus {
+                color : #4D4F50;
+            }
         }
-        &:focus,
-        &:hover {
+        @include hover-focus {
             .icon,
             .menu-action-text {
                 color: #4d4f50;
@@ -511,43 +580,9 @@ body.drawer-open-left {
 }
 .popover-region-toggle::before,
 .popover-region-toggle::after {
-    bottom: -8px;
+    bottom: -15px;
 }
 $drawer-width: 200px;
-#nav-drawer.closed {
-    left: 0;
-    width: 69px;
-    overflow-y: initial;
-    .list-group-item {
-        height: 52px;
-        white-space: nowrap;
-        width: max-content;
-        background-color: #fff;
-        transition: background-color .3s ease;
-        overflow: hidden;
-        .text-menu-item {
-            display: none;
-        }
-        &:hover {
-            background-color: #e4e4e4;
-            .text-menu-item {
-                display: inline-block;
-                padding: 5px 11px 4px;
-                float: left;
-            }
-        }
-        .icon::before {
-            font-size: 33px;
-            width: 33px;
-        }
-        &.sidebar-heading {
-            display: none;
-        }
-    }
-}
-#nav-drawer {
-    width: $drawer-width;
-}
 body.drawer-open-left {
     margin-left: $drawer-width;
 }

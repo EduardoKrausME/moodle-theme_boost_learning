@@ -31,14 +31,22 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @return string
      */
     public function favicon() {
-        return $this->page->theme->setting_file_url('favicon', 'favicon');
+        if ($this->page->theme->settings->favicon) {
+            return $this->page->theme->setting_file_url('favicon', 'favicon');
+        }
+
+        if (method_exists($this->page->theme, "image_url")) {
+            return $this->page->theme->image_url('favicon', 'theme');
+        } else {
+            return $this->page->theme->pix_url('favicon', 'theme');
+        }
     }
 
     /**
      * @return bool
      */
     public function should_display_navbar_logo1() {
-        if (get_config('theme_boost_learning', 'logo1')) {
+        if ($this->page->theme->settings->logo1) {
             return true;
         }
 
@@ -59,7 +67,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
      * @return bool
      */
     public function should_display_navbar_logo2() {
-        if (get_config('theme_boost_learning', 'logo2')) {
+        if ($this->page->theme->settings->logo2) {
             return true;
         }
 
