@@ -24,10 +24,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2017111700;
+$plugin->version = 2018011600;
 $plugin->requires = 2016120500;
 $plugin->release = 'V2.8';
 $plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'theme_boost_learning';
 
 $plugin->dependencies = array( 'theme_boost' => 2016071101 );
+
+
