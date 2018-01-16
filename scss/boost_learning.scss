@@ -101,6 +101,11 @@ body {
         .page-header-headings {
             float: none !important;
         }
+        a:first-of-type > .icon,
+        span:first-of-type > .icon,
+        .header-button-title {
+            color: 'text-color';
+        }
     }
     #page,
     #page-footer {
